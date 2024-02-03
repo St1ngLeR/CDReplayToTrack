@@ -53,17 +53,17 @@ namespace CDReplayToTrack
                 {
                     if (line.Contains("RP#2"))
                     {
-                        tracknameoffset += 4;
+                        tracknameoffset = 262226+4;
                         break;  // No need to continue reading once we find "RP#2"
                     }
                     if (line.Contains("RP#3"))
                     {
-                        tracknameoffset += 3;
+                        tracknameoffset = 262226+4;
                         break;  // No need to continue reading once we find "RP#3"
                     }
                     else
                     {
-                        tracknameoffset += 0;
+                        tracknameoffset = 262226;
                         break;
                     }
                 }
