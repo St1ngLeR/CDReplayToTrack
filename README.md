@@ -5,4 +5,4 @@
 ## Usage
 **Attention!** To run the application, you need to install [.NET Desktop Runtime 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or higher.
 
-To extract a track, select the replay file and then click on "*Extract*". For faster extraction, you can use the "Drag-and-drop" function and thus the track will be extracted in the folder with the replay file.
+To extract a track, select the replay file and then click on "*Extract*". For faster extraction, you can use the "Drag-and-drop" feature and thus the track will be extracted in the folder with the replay file.
