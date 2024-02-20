@@ -12,6 +12,7 @@ namespace CDReplayToTrack
     {
         private string filePath2;
         private string trackname;
+        private string trackname2;
         private int tracknameoffset = 262226;
         byte[] fileBytes;
         byte[] extractedBytes;
@@ -87,6 +88,12 @@ namespace CDReplayToTrack
             using (BinaryReader reader = new BinaryReader(File.Open(filePath, FileMode.Open)))
             {
                 fileBytes = reader.ReadBytes((int)reader.BaseStream.Length);
+            }
+
+            if (trackname.EndsWith(".bin")) // Is this map from Steam Workshop?
+            {
+                trackname2 = Path.GetFileNameWithoutExtension(trackname);
+                trackname = trackname2.Substring(0, trackname2.Length - 11)+".trk";
             }
 
             // Search for the "CDTRK" text
