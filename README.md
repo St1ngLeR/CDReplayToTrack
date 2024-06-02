@@ -8,3 +8,6 @@
 To extract a track, select the replay file and then click on "*Extract*". For faster extraction, you can use the "Drag-and-drop" feature and thus the track will be extracted in the folder with the replay file.
 ## TODO:
 - Fix track name detection for Steam Workshop tracks
+
+## 3rd-party plugins
+The application is using [Costura.Fody](https://github.com/Fody/Costura/) to compile all resources into a single executable file.
